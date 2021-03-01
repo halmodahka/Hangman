@@ -82,6 +82,12 @@ class Hangman extends Component {
           <GiHalfDead /> The Suicide Trap
         </h1>
 
+        <br></br>
+        <br></br>
+        <div className="text-center">
+          Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
+        </div>
+
         <div className="text-center">
           <img
             src={this.props.images[this.state.mistake]}
@@ -92,15 +98,8 @@ class Hangman extends Component {
         </div>
 
         <div className="text-center">
-          Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
-        </div>
-        <br></br>
-        <br></br>
-        <div className="text-center">
           <p>Guess the DC Character:</p>
           <p>{!Loser ? this.guessedWord() : this.state.answer}</p>
-          <br></br>
-          <br></br>
           <p>{gameStat}</p>
           <button className="btn btn-info" onClick={this.resetButton}>
             Reset
