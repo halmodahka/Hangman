@@ -81,9 +81,9 @@ class Hangman extends Component {
           {" "}
           <GiHalfDead /> The Suicide Trap
         </h1>
-        <div className="float-right">
+        {/* <div className="float-right">
           Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
-        </div>
+        </div> */}
 
         <div className="text-center">
           <img
@@ -94,6 +94,11 @@ class Hangman extends Component {
           />
         </div>
 
+        <div className="text-center">
+          Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
+        </div>
+        <br></br>
+        <br></br>
         <div className="text-center">
           <p>Guess the DC Character:</p>
           <p>{!Loser ? this.guessedWord() : this.state.answer}</p>
