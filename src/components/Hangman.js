@@ -41,7 +41,7 @@ class Hangman extends Component {
   }
 
   generateButtons() {
-    return "qwertyuiopasdfghjklzxcvbnm ".split("").map((letter) => (
+    return "qwertyuiopas dfghjklzxcvbnm".split("").map((letter) => (
       <button
         class="btn btn-lg btn-warning m-2 btn-default"
         key={letter}
@@ -81,16 +81,13 @@ class Hangman extends Component {
           {" "}
           <GiHalfDead /> The Suicide Trap
         </h1>
-        {/* <div className="float-right">
-          Wrong Guesses: {this.state.mistake} of {this.props.maxWrong}
-        </div> */}
 
         <div className="text-center">
           <img
             src={this.props.images[this.state.mistake]}
             alt=""
             width="450px"
-            style={{ marginLeft: 20, marginTop: 50 }}
+            // style={{ marginLeft: 20, marginTop: 50 }}
           />
         </div>
 
