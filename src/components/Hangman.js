@@ -41,7 +41,7 @@ class Hangman extends Component {
   }
 
   generateButtons() {
-    return "qwertyuiopasdfghjklzxcv bnm".split("").map((letter) => (
+    return "qwertyuiopasdfghjklzxcvbnm ".split("").map((letter) => (
       <button
         class="btn btn-lg btn-warning m-2 btn-default"
         key={letter}
@@ -90,7 +90,7 @@ class Hangman extends Component {
             src={this.props.images[this.state.mistake]}
             alt=""
             width="450px"
-            style={{ marginLeft: 180, marginTop: 50 }}
+            style={{ marginLeft: 20, marginTop: 50 }}
           />
         </div>
 
