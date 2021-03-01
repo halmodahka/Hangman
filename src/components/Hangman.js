@@ -86,8 +86,8 @@ class Hangman extends Component {
           <img
             src={this.props.images[this.state.mistake]}
             alt=""
-            width="450px"
-            // style={{ marginLeft: 20, marginTop: 50 }}
+            width="300px"
+            style={{ marginLeft: 10, marginTop: 50 }}
           />
         </div>
 
